@@ -6,7 +6,7 @@ availability_zone:
 source.availability_zone:
   brief: See: availability_zone
 
-dest.availability_zone
+dest.availability_zone:
   brief: See: availability_zone
 
 az_equal:
