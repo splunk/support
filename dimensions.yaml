@@ -5,9 +5,11 @@ availability_zone:
 
 source.availability_zone:
   brief: See availability_zone
+  description: See availability_zone
 
 dest.availability_zone:
   brief: See availability_zone
+  description: See availability_zone
 
 az_equal:
   brief: Boolean set true if the source and destination zones are the same.
@@ -21,9 +23,11 @@ workload.name:
 
 source.workload.name:
   brief: See workload.name
+  description: See workload.name
 
 dest.workload.name:
   brief: See workload.name
+  description: See workload.name
 
 image_version:
   brief: Kubernetes pod version label of the workload.
@@ -32,9 +36,11 @@ image_version:
 
 source.image_version:
   brief: See image_version
+  description: See image_version
 
 dest.image_version:
   brief: See image_version
+  description: See image_version
 
 environment:
   brief: Kubernetes cluster name the workload resides in.
@@ -43,9 +49,11 @@ environment:
 
 source.environment:
   brief: See environment
+  description: See environment
 
 dest.environment:
   brief: See environment
+  description: See environment
 
 namespace.name:
   brief: Kubernetes namespace name the workload resides in.
@@ -54,9 +62,11 @@ namespace.name:
 
 source.namespace.name:
   brief: See namespace.name
+  description: See namespace.name
 
 dest.namespace.name:
   brief: See namespace.name
+  description: See namespace.name
 
 resolution_type:
   brief: Level of detail available for the metric.
@@ -65,9 +75,11 @@ resolution_type:
 
 source.resolution_type:
   brief: See resolution_type
+  description: See resolution_type
 
 dest.resolution_type:
   brief: See resolution_type
+  description: See resolution_type
 
 process.name:
   brief: A specific UNIX process name.
@@ -76,9 +88,11 @@ process.name:
 
 source.process.name:
   brief: See process.name
+  description: See process.name
 
 dest.process.name:
   brief: See process.name
+  description: See process.name
 
 container.name:
   brief: Docker container name.
@@ -87,9 +101,11 @@ container.name:
 
 source.container.name:
   brief: See container.name
+  description: See container.name
 
 dest.container.name:
   brief: See container.name
+  description: See container.name
 
 status_code:
   brief: HTTP response code.
