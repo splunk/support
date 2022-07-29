@@ -105,7 +105,7 @@ http.active_sockets:
   brief: The number of active http sockets.
   description: |
     The number of unencrypted HTTPv1 or HTTPv2 connections considered to be open and alive between the source and destination at the point the measurement was taken.
-  metric_type: count (TBD: Shouldn't this be a gauge?)
+  metric_type: count
   title: http.active_sockets
 
 http.client.duration_average:
