@@ -4,10 +4,10 @@ availability_zone:
   example: us-east-1d
 
 source.availability_zone:
-  brief: See: availability_zone
+  brief: See availability_zone
 
 dest.availability_zone:
-  brief: See: availability_zone
+  brief: See availability_zone
 
 az_equal:
   brief: Boolean set true if the source and destination zones are the same.
@@ -20,10 +20,10 @@ workload.name:
   example: loadgenerator, (unknown), ip-172-12-19-222.ec2.internal
 
 source.workload.name:
-  brief: See: workload.name
+  brief: See workload.name
 
 dest.workload.name:
-  brief: See: workload.name
+  brief: See workload.name
 
 image_version:
   brief: Kubernetes pod version label of the workload.
@@ -31,10 +31,10 @@ image_version:
   example: latest, -, v0.3.6
 
 source.image_version:
-  brief: See: image_version
+  brief: See image_version
 
 dest.image_version:
-  brief: See: image_version
+  brief: See image_version
 
 environment:
   brief: Kubernetes cluster name the workload resides in.
@@ -42,10 +42,10 @@ environment:
   example: kubernetes, staging, production, (no agent)
 
 source.environment:
-  brief: See: environment
+  brief: See environment
 
 dest.environment:
-  brief: See: environment
+  brief: See environment
 
 namespace.name:
   brief: Kubernetes namespace name the workload resides in.
@@ -53,10 +53,10 @@ namespace.name:
   example: staging, -, kube-system, cert-manager
 
 source.namespace.name:
-  brief: See: namespace.name
+  brief: See namespace.name
 
 dest.namespace.name:
-  brief: See: namespace.name
+  brief: See namespace.name
 
 resolution_type:
   brief: Level of detail available for the metric.
@@ -64,10 +64,10 @@ resolution_type:
   example: AWS, CONTAINER, DNS, INSTANCE_METADATA, IP, K8S_CONTAINER, LOCALHOST, NOMAD, PROCESS
 
 source.resolution_type:
-  brief: See: resolution_type
+  brief: See resolution_type
 
 dest.resolution_type:
-  brief: See: resolution_type
+  brief: See resolution_type
 
 process.name:
   brief: A specific UNIX process name.
@@ -75,10 +75,10 @@ process.name:
   example: bind, -, etcd, checkoutservice
 
 source.process.name:
-  brief: See: process.name
+  brief: See process.name
 
 dest.process.name:
-  brief: See: process.name
+  brief: See process.name
 
 container.name:
   brief: Docker container name.
@@ -86,10 +86,10 @@ container.name:
   example: kubedns, -, kube-proxy, nginx-ingress
 
 source.container.name:
-  brief: See: container.name
+  brief: See container.name
 
 dest.container.name:
-  brief: See: container.name
+  brief: See container.name
 
 status_code:
   brief: HTTP response code.
