@@ -97,14 +97,14 @@ udp.drops:
 http.status_code:
   brief: Count of HTTP server response code in the prior 30 seconds.
   description: |
-    For a given class of response code (see 'response_code' dimension), the number of times an unencrypted server sent an HTTPv1 or HTTPv2 status code between the source and destination measured for the prior thirty seconds.
+    For a given class of response code (see 'response_code' dimension), the number of times an unencrypted server sent an HTTPv1 status code between the source and destination measured for the prior thirty seconds.
   metric_type: counter
   title: http.status_code
 
 http.active_sockets:
   brief: The number of active http sockets.
   description: |
-    The number of unencrypted HTTPv1 or HTTPv2 connections considered to be open and alive between the source and destination at the point the measurement was taken.
+    The number of unencrypted HTTPv1 connections considered to be open and alive between the source and destination at the point the measurement was taken.
   metric_type: count
   title: http.active_sockets
 
