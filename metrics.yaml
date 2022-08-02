@@ -102,30 +102,30 @@ http.status_code:
   title: http.status_code
 
 http.active_sockets:
-  brief: The number of active http sockets.
+  brief: The number of HTTP sockets in the prior interval for which metrics have been reported.
   description: |
-    The number of unencrypted HTTPv1 connections considered to be open and alive between the source and destination at the point the measurement was taken.
+    The number of unencrypted HTTPv1 connections for which measurements were taken in the prior thirty seconds.
   metric_type: count
   title: http.active_sockets
 
 http.client.duration_average:
   brief: Average client HTTP response time in ms.
   description: |
-    This metric is the average duration in microseconds from when the client sends an HTTP request, until the response is received back from the server.  As such, it includes the communication round-trip times, plus the server processing latency.  (TBD: Divide by sum of status_code counts, or active_sockets?)
+    This metric is the average duration in microseconds from when the client sends an HTTP request, until the response is received back from the server.  As such, it includes the communication round-trip times, plus the server processing latency.  Computed by summation of all times, divided by http.active_sockets.
   metric_type: counter
   title: http.client.duration_average
 
 http.server.duration_average:
   brief: Average server HTTP response time in ms.
   description: |
-     This metric is the average duration in microseconds for the server to respond to a request received locally.  Thus, it does not include the network latency from or to the client.  (TBD: Divide by sum of status_code counts, or active_sockets?)
+     This metric is the average duration in microseconds for the server to respond to a request received locally.  Thus, it does not include the network latency from or to the client.  Computed by summation of all times, divided by http.active_sockets.
   metric_type: counter
   title: http.server.duration_average
 
 dns.active_sockets:
-  brief: The number of active DNS connections.
+  brief: The number of DNS sockets in the prior interval for which metrics have been reported.
   description: |
-    The number of DNS connections considered to be open and alive between the source and destination at the point the measurement was taken.
+    The number of DNS connections for which measurements were taken in the prior thirty seconds.
   metric_type: gauge
   title: dns.active_sockets
 
@@ -146,21 +146,13 @@ dns.timeouts:
 dns.client.duration_average:
   brief:  Average client DNS response time in ms.
   description: |
-    This metric is the average duration in microseconds from when the client sends a DNS request, until the response is received back from the server.  As such, it includes the communication round-trip times, plus the server processing latency.  (TBD: Divide by responses, or active_sockets?)
+    This metric is the average duration in microseconds from when the client sends a DNS request, until the response is received back from the server.  As such, it includes the communication round-trip times, plus the server processing latency.  Computed by the summation of all times, divided by dns.responses.
   metric_type: counter
   title: dns.client.duration_average
 
 dns.server.duration_average:
   brief: Average server DNS response time in ms.
   description: |
-    This metric is the average duration in microseconds for the server to respond to a request received locally.  Thus, it does not include the network latency from or to the client.  (TBD: Divide by responses, or active_sockets?)
+    This metric is the average duration in microseconds for the server to respond to a request received locally.  Thus, it does not include the network latency from or to the client.  Computed by the summation of all times, divided by dns.responses.
   metric_type: counter
   title: dns.server.duration_average
-
-
-
-
-
-
-
-
